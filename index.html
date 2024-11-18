@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav class="nav-bar">
-            <div class="icon-mode">Logo</div>
+            <div class="icon-mode"><i class="fa-solid fa-moon"></i></div>
 
             <div class="nav-list">
                 <ul>
@@ -30,29 +30,48 @@
                 </ul>
             </div>
 
-            <div class="mobile-menu-icon">
-                <button>Icone hamburger</button>
+            <div class="mobile-menu-icon" onclick="menuShow()"> 
+                <button>
+                
+                <div class="linha1">
+                    </div>
+                    <div class="linha2">
+                    </div>
+                    <div class="linha3">
+                    </div>
+                </button>
             </div>
-
-            <div class="mobile-menu">
-                <ul>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre mim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Meus Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Conhecimentos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contatos</a>
-                    </li>
-                </ul>
-            </div>
-
 
         </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre mim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Meus Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conhecimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contatos</a>
+                </li>
+            </ul>
+        </div>
     </header>
+
+    <div class="container">
+
+        <!--Home-->
+        <div class="home">
+            <p>Ola Mundo!</p>
+            <h1>OI,<samp class="texto-destaque-titulo">eu sou Mateus Calixto... </samp></h1>
+            <p>Desenvolvedor full stack</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
