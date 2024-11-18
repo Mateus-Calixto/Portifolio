@@ -1,0 +1,90 @@
+/*importando fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap');
+
+
+/*Criando Variaveis*/
+:root{
+    --cor-bg: #f4f1e8;
+    --cor-texto-primario-white-mode: #000000;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Radley", serif;
+}
+
+body{
+    background-color: var(--cor-bg);
+
+}
+
+/*header*/
+header{
+    background-color: var(--cor-bg);
+    
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 7rem;
+}
+
+.icon-mode{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    list-style: none;
+}
+
+.mobile-menu ul{
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.115rem;
+    color: var(--cor-texto-primario-white-mode);
+    font-style: italic3;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+}
