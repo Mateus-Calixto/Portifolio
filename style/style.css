@@ -6,6 +6,7 @@
 :root{
     --cor-bg: #f4f1e8;
     --cor-texto-primario-white-mode: #000000;
+    --cor-texto-destaque: #9b4819;
 }
 
 
@@ -37,6 +38,7 @@ header{
 .icon-mode{
     display: flex;
     align-items: center;
+    font-size: 35px;
 }
 
 .nav-list{
@@ -79,8 +81,86 @@ header{
     margin: 8px;
 }
 
+/*Container*/
 .container{
     padding: 2.5rem 8em;
+}
+
+/*Home*/
+
+.home{
+    display: flex;
+    margin: 10vh 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home h1 {
+    font-size: 66px;
+} 
+
+.home p {
+    font-size: 21px;
+}
+
+.texto-italico{
+    font-style: italic;
+}
+
+.texto-destaque-titulo{
+    color: var(--cor-texto-destaque) ;
+    
+}
+
+.butoes{
+    margin-top: 25px;
+}
+
+.butoes a{
+    color: var(--cor-texto-primario-white-mode);
+    text-decoration: none;
+    font-size: 30px;
+    border: 1px solid;
+    padding: 10px 15px;
+    border-radius: 100%;
+    margin-right: 6px;
+
+}
+
+.butoes a:hover{
+    border: 2px solid black; 
+}
+
+.texto-veja-mais{
+    border-bottom: #9b4819 1px solid;
+    margin-top: 20vh;
+}
+
+/*Sobre mim*/
+
+.sobre-mim{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top:30px ;
+}
+
+.texto-sobre-mim{
+    width: 400px;
+}
+
+
+
+.sobre-mim img{
+    width: 200px;
+    border-radius: 70% 30%;
+}
+
+.sobre-mim p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 25px;
 }
 
 
@@ -126,4 +206,34 @@ header{
         display: block;
     }
 
+
+    .container{
+        padding: 2.5rem 4rem;
+    }
+
+
+    /*Home*/
+
+    .home{
+        margin-top: 10vh;
+    }
+
+    .home h1{
+        font-size: 37px;
+    }
+
+    /*Sobre mim*/
+    .sobre-mim{
+        flex-direction: column-reverse;
+    }
+
+ 
+    .texto-sobre-mim{
+        width: auto;
+    }
+
+    .sobre-mim img{
+        display: none;
+
+    }
 }
