@@ -117,6 +117,7 @@ header{
     margin-top: 25px;
 }
 
+
 .butoes a{
     color: var(--cor-texto-primario-white-mode);
     text-decoration: none;
@@ -125,13 +126,19 @@ header{
     padding: 10px 15px;
     border-radius: 100%;
     margin-right: 6px;
-
+    
 }
 
 .butoes a:hover{
     border: 2px solid black; 
 }
 
+#butoes-texto{
+    border-radius: 50px;
+    font-size: 18px;
+    font-style: italic;
+    
+}
 .texto-veja-mais{
     border-bottom: #9b4819 1px solid;
     margin-top: 20vh;
@@ -162,9 +169,61 @@ header{
     text-align: center;
     margin-top: 25px;
 }
+ 
 
+/*Meus Projetos*/
+.meus-projetos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    align-items: center;
+}
+
+.projetos{
+    margin: 5rem 0;
+}
+
+/*Card*/
+.card{
+    display: flex;
+    flex-direction: row;
+
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #e9e6dc;
+    margin-bottom: 60px ;
+
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-card{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+.img-card{
+    display: flex;
+    align-items: center;
+}
+
+.img-card img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.text-card{
+    width: 20rem;
+    margin-right: 30px;
+
+}
+
+.t-card > .butoes > a {
+    font-size: 18px;
+}
 
 @media screen and (max-width: 730px) {
+    /*navbar*/
     .nav-bar {
         padding: 1.5rem 4rem;
         
@@ -235,5 +294,21 @@ header{
     .sobre-mim img{
         display: none;
 
+    }
+
+    /*meus projetos*/
+
+    /*card*/
+
+    .card{
+        flex-direction: column-reverse;
+    }
+
+    .text-card{
+        margin: 0;
+    }
+
+    .titulo-card{
+        margin-top: 15px;
     }
 }
