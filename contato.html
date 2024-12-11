@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="icon-mode"><i class="fa-solid fa-moon"></i></div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Portifólio</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon" onclick="menuShow()">
+                <button>
+
+                    <div class="linha1">
+                    </div>
+                    <div class="linha2">
+                    </div>
+                    <div class="linha3">
+                    </div>
+                </button>
+            </div>
+
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Portifólio</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!--Formulario-->
+    <h1>Formulário de Contato</h1>
+    <p class="texto-italico">Estou disponível para novos desafios. Vamos trabalhar juntos?</p>
+    <div class="centro">
+
+        <form action="https://formsubmit.co/mateuscalixto.ti@gmail.com" method="POST" class="form">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required />
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required />
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" required></textarea>
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html" />
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
