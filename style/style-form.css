@@ -55,7 +55,7 @@ p{
 }
 
 .form textarea {
-    min-height: 13rem;
+    min-height: 12rem;
     resize: vertical;
 }
 
@@ -85,4 +85,10 @@ p{
 .form button:focus {
     outline: none;
     background: #c15a1f;
+}
+
+@media screen and (max-width: 730px) {
+    .form{
+        width:90%;
+    }
 }
